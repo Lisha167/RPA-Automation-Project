@@ -1,0 +1,112 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>UiPath.Word.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="748.6666666666666,1736" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="C:\Users\Dell\Downloads\trial.docx" sap:VirtualizedContainerService.HintSize="452,1713.3333333333333" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
+      <p:WordApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WordDocument">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1590.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <p:WordAppendText DisplayName="Append Text" sap:VirtualizedContainerService.HintSize="416,172" sap2010:WorkflowViewState.IdRef="WordAppendText_2" Text="CHOCOLATE CAKE" />
+            <p:WordAddImage Bookmark="{x:Null}" OccurrenceIndex="{x:Null}" Text="{x:Null}" DisplayName="Add Picture" sap:VirtualizedContainerService.HintSize="416,228" sap2010:WorkflowViewState.IdRef="WordAddImage_1" ImagePath="C:\Users\Dell\Downloads\chocolate-birthday-cake-scaled.jpg" InsertRelativeTo="Document" Position="End" />
+            <p:WordAppendText DisplayName="Append Text" sap:VirtualizedContainerService.HintSize="416,172" sap2010:WorkflowViewState.IdRef="WordAppendText_1" Text="Chocolate is one of the most popular and widely consumed sweet food products in the world. It is made from cocoa beans, which are obtained from the cacao tree, scientifically known as Theobroma cacao. Chocolate is produced by harvesting cocoa beans, fermenting, drying, roasting and grinding them into cocoa mass. This cocoa mass is then mixed with ingredients such as sugar, milk and cocoa butter to prepare different varieties of chocolate. The major types of chocolate are dark chocolate, milk chocolate and white chocolate. Dark chocolate contains a higher percentage of cocoa and has a slightly bitter taste, while milk chocolate is sweeter and creamier because it contains milk and sugar. White chocolate is made using cocoa butter, milk and sugar but does not contain cocoa solids.&#xD;&#xA;&#xD;&#xA;Chocolate is enjoyed in various forms, such as chocolate bars, candies, cakes, cookies, ice creams and desserts. It is also used in the preparation of many bakery and confectionery products. Some chocolates, especially dark chocolate with a high cocoa content, contain antioxidants called flavanols, which may support heart health. Chocolate also contains minerals such as iron, magnesium and copper. However, consuming excessive amounts of chocolate, particularly those with high sugar and fat content, may lead to weight gain and dental problems. Popular chocolate brands around the world include Cadbury, Nestlé, KitKat, Ferrero Rocher and Lindt. Chocolate plays an important role in the food industry and is loved by people of all age groups because of its delicious taste, variety and wide range of uses." />
+            <p:WordAppendText DisplayName="Append Text" sap:VirtualizedContainerService.HintSize="416,172" sap2010:WorkflowViewState.IdRef="WordAppendText_4" Text="RED VELVET CAKE" />
+            <p:WordAddImage Bookmark="{x:Null}" OccurrenceIndex="{x:Null}" Text="{x:Null}" DisplayName="Add Picture" sap:VirtualizedContainerService.HintSize="416,228" sap2010:WorkflowViewState.IdRef="WordAddImage_2" ImagePath="C:\Users\Dell\Downloads\red velvet.jpeg" InsertRelativeTo="Document" Position="End" />
+            <p:WordAppendText DisplayName="Append Text" sap:VirtualizedContainerService.HintSize="416,172" sap2010:WorkflowViewState.IdRef="WordAppendText_3" Text="Red Velvet Cake is a popular and delicious dessert known for its beautiful red colour, soft texture and creamy frosting. It is a type of layered cake traditionally made using ingredients such as flour, sugar, butter, eggs, cocoa powder, buttermilk, vanilla extract and a small amount of vinegar. Its distinctive red colour was originally developed through a reaction between natural cocoa powder and acidic ingredients, but today it is commonly achieved using red food colouring. Red Velvet Cake has a mild chocolate flavour with a slight tangy taste due to the addition of buttermilk and vinegar. It is usually covered with cream cheese frosting or buttercream, which adds a rich and creamy flavour to the cake. This cake is widely served at birthdays, weddings, anniversaries and other special occasions. It is also available in different forms, such as cupcakes, pastries, cake jars and cake slices. Red Velvet Cake is loved by people of all age groups because of its attractive appearance, soft and moist texture, and unique combination of flavours. It has become one of the most popular cake varieties in bakeries, restaurants and dessert shops around the world." />
+            <p:WordSaveAs DisplayName="Save Document As" FilePath="RPA_Sequence" sap:VirtualizedContainerService.HintSize="416,224" sap2010:WorkflowViewState.IdRef="WordSaveAs_1" />
+            <p:WordExportToPdf DisplayName="Save Document as PDF" FilePath="C:\Users\Dell\Downloads\trial.docx" sap:VirtualizedContainerService.HintSize="416,162.66666666666666" sap2010:WorkflowViewState.IdRef="WordExportToPdf_1" />
+          </Sequence>
+        </ActivityAction>
+      </p:WordApplicationScope.Body>
+    </p:WordApplicationScope>
+  </Sequence>
+</Activity>
